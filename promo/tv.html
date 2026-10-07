@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MIT Innovation Fellows – MIT TV slide (1920x1080)</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#1a2b3c; --orange:#ee8a2e; --orange-dark:#c96d14; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; }
+  body { font-family: "Montserrat", system-ui, sans-serif; background: #fefefe; color: var(--navy); overflow: hidden; display: grid; grid-template-columns: 1200px 720px; }
+
+  .left { padding: 40px 30px 48px 80px; display: flex; flex-direction: column; justify-content: space-between; }
+  .left img { width: 900px; display: block; margin-left: -10px; }
+  h1 { font-size: 86px; line-height: 1.04; font-weight: 900; text-transform: uppercase; letter-spacing: -1.5px; }
+  h1 em { font-style: normal; color: var(--orange-dark); }
+  .where { display: inline-block; align-self: flex-start; background: var(--orange); color: #fff; font-size: 52px; font-weight: 800; text-transform: uppercase; padding: 14px 36px; border-radius: 14px; letter-spacing: .5px; }
+  ul { list-style: none; font-size: 42px; font-weight: 700; line-height: 1.3; }
+  li { position: relative; padding-left: 48px; margin-bottom: 10px; }
+  li::before { content: ""; position: absolute; left: 4px; top: .5em; width: 20px; height: 20px; border-radius: 50%; background: var(--orange); }
+
+  .right { background: var(--navy); color: #fff; padding: 44px 40px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center; }
+  .money b { display: block; font-size: 92px; line-height: 1; font-weight: 900; color: var(--orange); }
+  .money span { display: block; margin-top: 6px; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; line-height: 1.2; }
+  .qr { background: #fff; border-radius: 26px; padding: 22px; width: 360px; }
+  .qr img { width: 100%; display: block; }
+  .scan { font-size: 40px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+  .deadline { font-size: 58px; font-weight: 900; line-height: 1.05; text-transform: uppercase; color: var(--orange); }
+  .org { font-size: 24px; color: #cfd8e3; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="left">
+    <img src="logo.png" alt="MIT Innovation Fellows, IAP 2027">
+    <h1>Take your<br>startup idea to<br><em>Silicon Valley</em></h1>
+    <div class="where">2 weeks in Palo Alto &bull; IAP 2027</div>
+    <ul>
+      <li>Pitch to investors</li>
+      <li>Meet your future customers</li>
+      <li>Learn from alumni founders</li>
+      <li>Meet industry leaders</li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="money">
+      <b>$5,000</b><span>per participant<br>up to $10,000 per team</span>
+    </div>
+    <div class="money">
+      <b>$50,000</b><span>pre-seed award for the<br>pitch-day winning startup</span>
+    </div>
+    <div class="qr"><img src="qr.svg" alt="QR code to the application"></div>
+    <div>
+      <div class="scan">Scan to apply</div>
+      <div class="deadline">Due Fri, Oct 23</div>
+    </div>
+    <div class="org">Open to MIT undergrads &amp; MEng students<br>MIT School of Engineering &bull; CSAIL</div>
+  </div>
+</body>
+</html>

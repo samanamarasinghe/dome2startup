@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MIT Innovation Fellows – Poster (US Letter)</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  :root { --navy:#1a2b3c; --orange:#ee8a2e; --orange-dark:#c96d14; --ink:#26323f; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 8.5in; height: 10.99in; overflow: hidden; }
+  body { font-family: "Montserrat", system-ui, sans-serif; color: var(--ink); background: #fefefe; display: flex; flex-direction: column; overflow: hidden; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .top { padding: .2in .5in 0; text-align: center; }
+  .top img { width: 5.9in; height: auto; display: block; margin: 0 auto; }
+
+  .headline { padding: .06in .3in .14in; text-align: center; }
+  .headline h1 { font-size: 50px; line-height: 1.05; font-weight: 900; letter-spacing: -.5px; color: var(--navy); text-transform: uppercase; }
+  .headline h1 em { font-style: normal; color: var(--orange-dark); }
+
+  .strip { background: var(--orange); color: #fff; text-align: center; padding: .1in .3in; font-weight: 800; font-size: 29px; letter-spacing: .5px; text-transform: uppercase; }
+
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: .2in; padding: .18in .5in 0; }
+  .stat { border: 4px solid var(--navy); border-radius: 18px; text-align: center; padding: .08in .1in .1in; }
+  .stat b { display: block; font-size: 50px; font-weight: 900; line-height: 1; color: var(--navy); }
+  .stat span { display: block; margin-top: 4px; font-size: 17px; font-weight: 700; color: var(--orange-dark); text-transform: uppercase; letter-spacing: .3px; line-height: 1.2; }
+  .stat.award { background: var(--navy); }
+  .stat.award b { color: var(--orange); }
+  .stat.award span { color: #fff; }
+
+  .detail { display: grid; grid-template-columns: 1.15fr 1fr; gap: .3in; padding: .16in .5in .14in; flex: 1; }
+  .detail h2 { font-size: 15px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--orange-dark); margin-bottom: 6px; }
+  .detail ul { list-style: none; }
+  .detail li { font-size: 15.5px; line-height: 1.35; margin-bottom: 7px; padding-left: 20px; position: relative; }
+  .detail li::before { content: ""; position: absolute; left: 2px; top: .38em; width: 9px; height: 9px; border-radius: 50%; background: var(--orange); }
+  .detail li b { color: var(--navy); }
+  .detail p { font-size: 14.5px; line-height: 1.4; margin-bottom: 8px; }
+  .detail p b { color: var(--navy); }
+  .dates li { margin-bottom: 4px; font-size: 14.5px; }
+  .dates li::before { background: var(--navy); }
+
+  .cta { background: var(--navy); color: #fff; display: grid; grid-template-columns: 1.75in 1fr; align-items: center; gap: .35in; padding: .15in .5in .38in; }
+  .qr { background: #fff; border-radius: 14px; padding: .12in; }
+  .qr img { width: 100%; display: block; }
+  .cta .apply { font-size: 17px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); }
+  .cta .deadline { font-size: 40px; font-weight: 900; line-height: 1.02; text-transform: uppercase; margin: 4px 0 8px; }
+  .cta .scan { font-size: 21px; font-weight: 700; }
+  .cta .small { margin-top: 8px; font-size: 13.5px; color: #cfd8e3; line-height: 1.4; }
+  .cta .small a { color: #fff; text-decoration: none; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <img src="logo.png" alt="MIT Innovation Fellows, IAP 2027">
+  </div>
+
+  <div class="headline">
+    <h1>Take your startup idea<br>to <em>Silicon Valley</em></h1>
+  </div>
+
+  <div class="strip">2 weeks in Palo Alto &bull; IAP 2027</div>
+
+  <div class="stats">
+    <div class="stat"><b>$5,000</b><span>per participant<br>up to $10,000 per team</span></div>
+    <div class="stat award"><b>$50,000</b><span>pre-seed award for the<br>pitch-day winning startup</span></div>
+  </div>
+
+  <div class="detail">
+    <div>
+      <h2>What you'll do</h2>
+      <ul>
+        <li><b>Pitch to investors.</b> Candid VC office hours on what makes a company fundable.</li>
+        <li><b>Meet your future customers.</b> Buyer meetings, design partners, pricing and pilots.</li>
+        <li><b>Learn from alumni founders</b> who built companies from zero to scale.</li>
+        <li><b>Hang out with industry leaders</b> in AI, robotics and deep tech.</li>
+        <li><b>Pitch Day.</b> Present to a panel of VCs. The winning startup takes the $50,000 award.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Who &amp; when</h2>
+      <p><b>Open to current MIT undergraduates and MEng students.</b> Any stage, from a developed concept to a company with customers. Grants cover travel, lodging and other costs.</p>
+      <ul class="dates">
+        <li><b>Oct 9</b> Applications open</li>
+        <li><b>Oct 23</b> Applications due</li>
+        <li><b>Oct 28&ndash;30</b> Finalist presentations</li>
+        <li><b>Nov 2</b> Fellows announced</li>
+        <li><b>Jan 11&ndash;23</b> Palo Alto</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="qr"><img src="qr.svg" alt="QR code to the application"></div>
+    <div>
+      <div class="apply">Apply now</div>
+      <div class="deadline">Due Friday,<br>Oct 23</div>
+      <div class="scan">Scan to apply</div>
+      <div class="small">Questions? <a href="mailto:dome2startup@lists.csail.mit.edu">dome2startup@lists.csail.mit.edu</a><br>MIT School of Engineering &bull; CSAIL</div>
+    </div>
+  </div>
+</body>
+</html>

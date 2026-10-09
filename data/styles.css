@@ -144,6 +144,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--navy); outline-of
 
 .footer { padding: 28px 0; font-size: .9rem; color: var(--muted); text-align: center; border-top: 1px solid var(--line); }
 .footer p { margin: 0 0 4px; }
+.footer .soe { height: 44px; width: auto; margin: 8px auto 12px; }
 
 @media (max-width: 900px) {
   .nav nav a:not(.btn) { display: none; }

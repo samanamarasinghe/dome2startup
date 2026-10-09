@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>MIT Innovation Fellows – Poster (US Letter)</title>
+<title>MIT Venture West Program – Poster (US Letter)</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   @page { size: 8.5in 11in; margin: 0; }
@@ -12,7 +12,12 @@
   body { font-family: "Montserrat", system-ui, sans-serif; color: var(--ink); background: #fefefe; display: flex; flex-direction: column; overflow: hidden; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
   .top { padding: .2in .5in 0; text-align: center; }
-  .top img { width: 5.9in; height: auto; display: block; margin: 0 auto; }
+  .top .logo { width: 5.9in; margin: 0 auto; }
+  .logo { container-type: inline-size; }
+  .logo img { width: 100%; height: auto; display: block; }
+  .logo-title { text-align: center; white-space: nowrap; font-weight: 800; font-size: 4.2cqw; line-height: 1.2; margin-top: .6cqw; color: var(--navy); }
+  .logo-title span { color: var(--orange); }
+
 
   .headline { padding: .06in .3in .14in; text-align: center; }
   .headline h1 { font-size: 50px; line-height: 1.05; font-weight: 900; letter-spacing: -.5px; color: var(--navy); text-transform: uppercase; }
@@ -22,10 +27,10 @@
 
   .stats { display: grid; grid-template-columns: 1fr 1fr; gap: .2in; padding: .18in .5in 0; }
   .stat { border: 4px solid var(--navy); border-radius: 18px; text-align: center; padding: .08in .1in .1in; }
-  .stat b { display: block; font-size: 50px; font-weight: 900; line-height: 1; color: var(--navy); }
+  .stat b { display: block; font-size: 41px; font-weight: 900; line-height: 1.2; color: var(--navy); }
   .stat span { display: block; margin-top: 4px; font-size: 17px; font-weight: 700; color: var(--orange-dark); text-transform: uppercase; letter-spacing: .3px; line-height: 1.2; }
   .stat.award { background: var(--navy); }
-  .stat.award b { color: var(--orange); }
+  .stat.award b { color: var(--orange); font-size: 50px; line-height: 1.04; }
   .stat.award span { color: #fff; }
 
   .detail { display: grid; grid-template-columns: 1.15fr 1fr; gap: .3in; padding: .16in .5in .14in; flex: 1; }
@@ -39,19 +44,21 @@
   .dates li { margin-bottom: 4px; font-size: 14.5px; }
   .dates li::before { background: var(--navy); }
 
-  .cta { background: var(--navy); color: #fff; display: grid; grid-template-columns: 1.75in 1fr; align-items: center; gap: .35in; padding: .15in .5in .38in; }
+  .cta { background: var(--navy); color: #fff; display: grid; grid-template-columns: 1.75in 1fr; align-items: center; gap: .35in; padding: .12in .5in .34in; }
   .qr { background: #fff; border-radius: 14px; padding: .12in; }
   .qr img { width: 100%; display: block; }
   .cta .apply { font-size: 17px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); }
-  .cta .deadline { font-size: 40px; font-weight: 900; line-height: 1.02; text-transform: uppercase; margin: 4px 0 8px; }
+  .cta .deadline { white-space: nowrap; font-size: 36px; font-weight: 900; line-height: 1.0; text-transform: uppercase; margin: 2px 0 6px; }
   .cta .scan { font-size: 21px; font-weight: 700; }
-  .cta .small { margin-top: 8px; font-size: 13.5px; color: #cfd8e3; line-height: 1.4; }
+  .cta .small { margin-top: 8px; font-size: 16px; color: #cfd8e3; line-height: 1.4; }
+  .cta .info { font-size: 19px; line-height: 1.35; white-space: nowrap; margin-bottom: 2px; }
+  .cta .info a { color: var(--orange); }
   .cta .small a { color: #fff; text-decoration: none; font-weight: 700; }
 </style>
 </head>
 <body>
   <div class="top">
-    <img src="logo.png" alt="MIT Innovation Fellows, IAP 2027">
+    <div class="logo"><img src="logo-art.png" alt=""><div class="logo-title">MIT VENTURE WEST PROGRAM <span>&ndash; IAP 2027</span></div></div>
   </div>
 
   <div class="headline">
@@ -61,7 +68,7 @@
   <div class="strip">2 weeks in Palo Alto &bull; IAP 2027</div>
 
   <div class="stats">
-    <div class="stat"><b>$5,000</b><span>per participant<br>up to $10,000 per team</span></div>
+    <div class="stat"><b>$6,000&ndash;$7,500</b><span>grant per team<br>of two or three participants</span></div>
     <div class="stat award"><b>$50,000</b><span>pre-seed award for the<br>pitch-day winning startup</span></div>
   </div>
 
@@ -70,7 +77,7 @@
       <h2>What you'll do</h2>
       <ul>
         <li><b>Pitch to investors.</b> Candid VC office hours on what makes a company fundable.</li>
-        <li><b>Meet your future customers.</b> Buyer meetings, design partners, pricing and pilots.</li>
+        <li><b>Meet your future customers.</b> Design partners, pricing and pilots.</li>
         <li><b>Learn from alumni founders</b> who built companies from zero to scale.</li>
         <li><b>Hang out with industry leaders</b> in AI, robotics and deep tech.</li>
         <li><b>Pitch Day.</b> Present to a panel of VCs. The winning startup takes the $50,000 award.</li>
@@ -78,12 +85,12 @@
     </div>
     <div>
       <h2>Who &amp; when</h2>
-      <p><b>Open to current MIT undergraduates and MEng students.</b> Any stage, from a developed concept to a company with customers. Grants cover travel, lodging and other costs.</p>
+      <p><b>Open to current MIT undergraduates and MEng students.</b> Any stage, from a developed concept to a company with customers. Grants cover travel and shared lodging.</p>
       <ul class="dates">
         <li><b>Oct 12</b> Applications open</li>
         <li><b>Oct 23</b> Applications due</li>
         <li><b>Oct 28&ndash;30</b> Finalist presentations</li>
-        <li><b>Nov 2</b> Fellows announced</li>
+        <li><b>Nov 2</b> Teams announced</li>
         <li><b>Jan 11&ndash;23</b> Palo Alto</li>
       </ul>
     </div>
@@ -93,9 +100,9 @@
     <div class="qr"><img src="qr.svg" alt="QR code to the application"></div>
     <div>
       <div class="apply">Apply now</div>
-      <div class="deadline">Due Friday,<br>Oct 23</div>
+      <div class="deadline">Due Friday, Oct 23</div>
       <div class="scan">Scan to apply</div>
-      <div class="small">Questions? <a href="mailto:dome2startup@lists.csail.mit.edu">dome2startup@lists.csail.mit.edu</a><br>MIT School of Engineering &bull; CSAIL</div>
+      <div class="small"><div class="info">More info: <a href="https://projects.csail.mit.edu/dome2startup/">projects.csail.mit.edu/dome2startup</a></div>Questions? <a href="mailto:dome2startup@lists.csail.mit.edu">dome2startup@lists.csail.mit.edu</a><br>MIT School of Engineering</div>
     </div>
   </div>
 </body>

@@ -65,7 +65,10 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--navy); outline-of
 
 /* Hero */
 .hero { padding: 32px 0 56px; text-align: center; }
-.hero-img { margin: 0 auto 8px; width: min(900px, 100%); }
+.hero-logo { margin: 0 auto 8px; width: min(900px, 100%); container-type: inline-size; }
+.hero-logo img { width: 100%; height: auto; mix-blend-mode: multiply; }
+.logo-title { text-align: center; white-space: nowrap; font-weight: 800; font-size: 4.2cqw; line-height: 1.2; margin-top: .6cqw; color: var(--navy); }
+.logo-title span { color: var(--orange); }
 .lead { font-size: clamp(1.5rem, 3.4vw, 2.3rem); font-weight: 800; color: var(--navy); margin: 24px 0 12px; }
 .sub { max-width: 780px; margin: 0 auto; font-size: 1.1rem; color: var(--muted); }
 .hero .cta-row { justify-content: center; }

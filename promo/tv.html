@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>MIT Innovation Fellows – MIT TV slide (1920x1080)</title>
+<title>MIT Venture West Program – MIT TV slide (1920x1080)</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root { --navy:#1a2b3c; --orange:#ee8a2e; --orange-dark:#c96d14; }
@@ -11,7 +11,12 @@
   body { font-family: "Montserrat", system-ui, sans-serif; background: #fefefe; color: var(--navy); overflow: hidden; display: grid; grid-template-columns: 1200px 720px; }
 
   .left { padding: 40px 30px 48px 80px; display: flex; flex-direction: column; justify-content: space-between; }
-  .left img { width: 900px; display: block; margin-left: -10px; }
+  .left .logo { width: 900px; margin-left: -10px; }
+  .logo { container-type: inline-size; }
+  .logo img { width: 100%; height: auto; display: block; }
+  .logo-title { text-align: center; white-space: nowrap; font-weight: 800; font-size: 4.2cqw; line-height: 1.2; margin-top: .6cqw; color: var(--navy); }
+  .logo-title span { color: var(--orange); }
+
   h1 { font-size: 86px; line-height: 1.04; font-weight: 900; text-transform: uppercase; letter-spacing: -1.5px; }
   h1 em { font-style: normal; color: var(--orange-dark); }
   .where { display: inline-block; align-self: flex-start; background: var(--orange); color: #fff; font-size: 52px; font-weight: 800; text-transform: uppercase; padding: 14px 36px; border-radius: 14px; letter-spacing: .5px; }
@@ -20,7 +25,7 @@
   li::before { content: ""; position: absolute; left: 4px; top: .5em; width: 20px; height: 20px; border-radius: 50%; background: var(--orange); }
 
   .right { background: var(--navy); color: #fff; padding: 44px 40px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center; }
-  .money b { display: block; font-size: 92px; line-height: 1; font-weight: 900; color: var(--orange); }
+  .money b { display: block; font-size: 72px; line-height: 1; font-weight: 900; color: var(--orange); }
   .money span { display: block; margin-top: 6px; font-size: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; line-height: 1.2; }
   .qr { background: #fff; border-radius: 26px; padding: 22px; width: 360px; }
   .qr img { width: 100%; display: block; }
@@ -31,7 +36,7 @@
 </head>
 <body>
   <div class="left">
-    <img src="logo.png" alt="MIT Innovation Fellows, IAP 2027">
+    <div class="logo"><img src="logo-art.png" alt=""><div class="logo-title">MIT VENTURE WEST PROGRAM <span>&ndash; IAP 2027</span></div></div>
     <h1>Take your<br>startup idea to<br><em>Silicon Valley</em></h1>
     <div class="where">2 weeks in Palo Alto &bull; IAP 2027</div>
     <ul>
@@ -43,7 +48,7 @@
   </div>
   <div class="right">
     <div class="money">
-      <b>$5,000</b><span>per participant<br>up to $10,000 per team</span>
+      <b>$6,000&ndash;$7,500</b><span>grant per team<br>of two or three participants</span>
     </div>
     <div class="money">
       <b>$50,000</b><span>pre-seed award for the<br>pitch-day winning startup</span>
@@ -53,7 +58,7 @@
       <div class="scan">Scan to apply</div>
       <div class="deadline">Due Fri, Oct 23</div>
     </div>
-    <div class="org">Open to MIT undergrads &amp; MEng students<br>MIT School of Engineering &bull; CSAIL</div>
+    <div class="org">Open to MIT undergrads &amp; MEng students<br>MIT School of Engineering</div>
   </div>
 </body>
 </html>

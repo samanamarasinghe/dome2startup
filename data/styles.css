@@ -60,6 +60,11 @@ p { margin: 0 0 1em; }
 .btn-ghost:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
 .btn-light { background: #fff; color: var(--navy); border-color: #fff; }
 .btn-light:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+.btn-disabled {
+  background: #c7cdd4; border-color: #c7cdd4; color: #6b7682;
+  cursor: not-allowed; pointer-events: none; user-select: none;
+}
+.btn-disabled:hover { background: #c7cdd4; border-color: #c7cdd4; transform: none; }
 a:focus-visible, .btn:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0; }
 
@@ -135,6 +140,15 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--navy); outline-of
 .timeline time { font-weight: 700; color: var(--navy); }
 .timeline .highlight { background: #fff7ee; border-radius: 0 var(--radius) var(--radius) 0; }
 .timeline .highlight::before { background: var(--orange); }
+.timeline .deadline-passed { opacity: .55; }
+.timeline .deadline-passed time,
+.timeline .deadline-passed span { text-decoration: line-through; text-decoration-thickness: 2px; }
+.timeline .deadline-passed::before { background: var(--muted); border-color: var(--muted); }
+.timeline .closed-tag {
+  display: inline-block; margin-left: 8px; font-style: normal; font-weight: 700; font-size: .75rem;
+  text-decoration: none; text-transform: uppercase; letter-spacing: .04em;
+  color: #6b7682; background: #e3e8ee; border-radius: 999px; padding: 2px 10px;
+}
 
 .cta-band { background: var(--navy); color: #fff; }
 .cta-band h2 { color: #fff; }
